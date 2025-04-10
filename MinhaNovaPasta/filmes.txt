@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <meta charset="UTF-8" />
+   <meta name ="viewport" content="width=device-width, initial-scale=1.0" />
+   <title> MEUS FILMES/SÉRIES FAVORITOS</title>
+   <h2 class="centralizado-texto"><b>MEUS FILMES/SÉRIES FAVORITOS
+   <style>
+      .centralizado-texto {
+          text-align: center;
+      }
+  </style>
+
+</head>
+<body> 
+   <a id="inicio"></a> 
+    <header>
+        
+
+   <nav>
+        <ul>  
+            <li><a href="#Série DARK">Ir para a Série DARK</a></li> 
+            <li><a href="#Filme A Ilha do Medo"> Ir para o Filme a Ilha do Medo</a></li>
+            <li><a href="#Filme Olga"> Ir para o Filme Olga</a></li>
+        </ul>
+   </nav>
+</header>
+<main>
+   <section>
+      <h2 id="Série DARK">Série DARK</h2>
+      <img src="https://i.pinimg.com/564x/1e/17/e8/1e17e88b19f6a74a17a873bcc19b9a54.jpg" alt="Descrição da imagem" width="200" height="200">
+      <p> A série Dark é um suspense da Netflix que se passa na cidade fictícia de Winden, Alemanha. A trama gira em torno do desaparecimento de crianças e de um mistério que atravessa três gerações.</p>
+      <a href="Série DARK.html"target="_blank">Ir para a Série DARK</a>
+      <p><a href="#inicio">Voltar ao início</a></p>
+   </section>
+   <Section> 
+      <h2 id="Filme A Ilha do Medo"> Filme A Ilha do Medo</h2>
+      <img src="https://s3.amazonaws.com/assets.caixabelasartes.com.br/wp-content/uploads/2016/03/ILHA-DO-MEDO.jpg" alt="Descrição da imagem" width="200" height="200">
+      <p> Ilha do Medo é um filme de 2010 que conta a história de dois agentes federais que investigam o desaparecimento de uma paciente de um manicômio. </p>
+      <a href="Filme A Ilha do Medo.html"target="_blank"> Ir para o Filme a Ilha do Medo</a>
+      <p><a href="#inicio">Voltar ao início</a></p>
+   </Section>
+   <section>
+      <h2 id="Filme Olga">Filme Olga</h2>
+      <img src="https://br.web.img2.acsta.net/medias/nmedia/18/87/14/67/19872486.jpg" alt="Descrição da imagem" width="200" height="200">
+      <p> Baseado em fatos reais, o filme retrata a vida de Olga Benário (1908-1942), uma jovem alemã, judia e militante do movimento comunista. A história tem como pano de fundo as atrocidades cometidas pelo nazifascismo, além do contexto mundial de tensão entre os ideais defendidos pelo comunismo e pelo capitalismo.</p>
+      <a href="Olga.html"target="_blank">Ir para o Filme Olga</a>
+   </section>
+   <p><a href="#inicio">Voltar ao início</a></p>
+
+</main>
+</body>
+</html>
