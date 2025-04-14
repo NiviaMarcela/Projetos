@@ -1,0 +1,43 @@
+/*tags de estilo*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #000000, #f4d6f8);
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+.nivia { 
+color: #f8c4e8;
+  text-align: center;
+  background: rgb(241, 193, 239);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 100px rgba(198, 122, 241, 0.8);
+  max-width: 700px;
+  background-color: transparent;
+}
+
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px ;
+    padding: 10px;
+    background: #dfb9f5;
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+.centralizado{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
