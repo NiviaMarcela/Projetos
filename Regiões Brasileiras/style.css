@@ -15,11 +15,12 @@ header {
   flex-direction: column;
  justify-content: center;
  align-items: center;
+ background-color: rgba(241, 169, 12, 0.986);
 }
 
 
 header div {
-  background-color: rgba(241, 169, 12, 0.986);
+  
   color: rgb(1, 11, 20);
   display: flex;
   align-items: center;
