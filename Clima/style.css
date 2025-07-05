@@ -21,7 +21,7 @@ body {
 
 h1 {
     color: #222;
-    margin-top: 40px;
+    margin-top: 150px;
     margin-bottom: 20px;
     text-shadow: 1px 1px 8px #fff8;
 }
@@ -58,17 +58,19 @@ h1 {
 }
 
 #conteinerTemp {
-    background: #fff;
+    background: #cff5fa;
     border-radius: 16px;
-    box-shadow: 0 4px 24px #0002;
+    box-shadow: 0 4px 24px rgba(12, 1, 61, 0.438);
     padding: 32px 40px;
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 260px;
     max-width: 90vw;
     justify-content: center;
+    font-weight: bold;
+    font-size: 28px;
 }
 
 
@@ -82,7 +84,22 @@ h3 {
 }
 
 #temp, #tempf {
-    color: #74ebd5;
+    color: #05b998;
     font-weight: bold;
     font-size: 28px;
 }
+
+.marca-dagua {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p1/2550504-cute-cartoon-blue-sky-with-cloud-and-sun-vector-background-wallpaper-gratis-vetor.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      opacity: 0.9; 
+      z-index: -1; 
+  }
+

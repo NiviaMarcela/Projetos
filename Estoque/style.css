@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: rgb(241, 224, 252) ;
+}
+
+  .marca-dagua {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(https://media.istockphoto.com/id/474471942/pt/vetorial/fundo-floral-com-flores-lil%C3%A1s.jpg?s=612x612&w=0&k=20&c=DBRqbKWYZnF4M_Vz1FcMAmhnGWLwQYjw0PR7Wz30sMk=);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      opacity: 0.3; 
+      z-index: -1; 
+  }
