@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: auto; */
+    flex-direction: column;
+    display: inline-block;
+    font-weight: bold;
+    margin: 200px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    
+    
+}
+
+#valor1{
+    color: rgb(255, 255, 255);
+     background-color: rgb(96, 209, 209);
+      border-radius: 10px;
+      width: 50px;
+      font-weight: bold;
+    
+}
+
+#valor2{
+    color: rgb(255, 255, 255);
+    background-color: rgb(96, 209, 209);
+    border-radius: 10px;
+    width: 50px;
+    font-weight: bold;
+    
+
+}
+input[type="number"] {
+    text-align: center; /* Centraliza o texto */
+
+
+}
+ 
+.container {
+    display: flex;
+    margin-top: 50px;
+    align-items: center; /* Centraliza os itens */
+    gap: 10px; /* Espaço entre os elementos */
+    justify-items: flex-end;
+    justify-content: center;
+    
+   
+}
+
+#resultado {
+    display: inline-block;
+    border: 2px solid rgb(96, 209, 209);/* Adiciona uma borda preta */
+    padding: 0px; /* Espaçamento interno */
+    min-width: 200px; /* Define uma largura mínima */
+    text-align: center; /* Centraliza o texto */
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10%;
+    border-radius: 10px;
+    color: black;
+
+}
+
+button{
+     border-radius: 10px;
+}

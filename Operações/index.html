@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Calculadora Simples</title>
+  </head>
+  <header><h1>Calculadora Simples com as 4 operações</h1></header>
+  <br />
+  <body>
+    <label for="Valor1"> VALOR 1:</label>
+    <input type="number" id="valor1" />
+
+    <label for="Valor2"> VALOR 2:</label>
+    <input type="number" id="valor2" />
+
+    <div class="container">
+      <button onclick="operacao('somar')">Somar</button>
+      <button onclick="operacao('subtrair')">Subtrair</button>
+      <button onclick="operacao('multiplicar')">Multiplicar</button>
+      <button onclick="operacao('dividir')">Dividir</button>
+    </div>
+
+    <h2 id="resultado">RESULTADO:</h2>
+
+    <script src="script.js"></script>
+  </body>
+</html>
