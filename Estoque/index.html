@@ -14,17 +14,23 @@
   <H2>Login:</H2>
   <input type="text"  id="usuario" placeholder="Digite seu Usuário"> 
   <input type="password" id="senha" placeholder="Senha">
-  <button id="Acessar">Acessar</button>
+  <button onclick="acessar()" class="custom-button"><b>Acessar</b></button>
 
  
- 
-  <h1>Minha Lista de Compras</h1>
-<input type="text" id="novoproduto"> <button id="adicionar">Adicionar Produto</button>
+ <div id="modalcadastro" class="modal">
+
+  <div id="compras"><h1>Minha Lista de Compras</h1>
+<input type="text" id="novoproduto" placeholder="Adicione um Produto"> <button id="adicionar">Adicionar Produto</button><button onclick="fechar()" class="custom-button">Fechar</button>
   
   <h2>Produtos:</h2>
 
  <h3 id="aviso">Lista de Compras está vazia!</h3>
  <ul id="lista"></ul>
+ </div>
+
+
+
+ </div>
 
 <div class="marca-dagua"></div>
 

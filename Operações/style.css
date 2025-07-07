@@ -13,7 +13,7 @@ body{
     font-weight: bold;
     margin: 150px;
     text-align: center;
-    box-shadow: 2px 2px 5px 5px #539ee4;
+    box-shadow: 2px 2px 5px 5px #aad0f3;
     width: 70% ;
     margin-left: 200px;
     
@@ -27,7 +27,7 @@ h1{
 
 #valor1{
     color: rgb(255, 255, 255);
-     background-color: rgb(25, 84, 211);
+     background-color: rgb(127, 163, 240);
       border-radius: 10px;
       width: 50px;
       font-weight: bold;
@@ -36,7 +36,7 @@ h1{
 
 #valor2{
     color: rgb(255, 255, 255);
-    background-color: rgb(25, 84, 211);
+    background-color: rgb(118, 151, 221);
     border-radius: 10px;
     width: 50px;
     font-weight: bold;

@@ -1,3 +1,4 @@
+
 document.getElementById("adicionar").addEventListener("click", () => {
   const input = document.getElementById("novoproduto");
   const produto = input.value.trim();
@@ -8,7 +9,8 @@ document.getElementById("adicionar").addEventListener("click", () => {
   const passwordInput = document.getElementById("senha");
   const senha = passwordInput.value.trim();
 
-  
+
+
   if (produto && usuario) {
     adicionarItem(produto,usuario);
     input.value = "";
@@ -16,6 +18,22 @@ document.getElementById("adicionar").addEventListener("click", () => {
 });
 
 
+function acessar(){
+  const usuario = document.getElementById("usuario").value.trim();      
+     
+    
+if (usuario === "Nivia Marcela") {
+  
+  document.getElementById("modalcadastro").style.display="flex";
+        alert("Acesso Permitido");
+    } else {
+        alert("Acesso Negado");
+        document.getElementById("modalcadastro").style.display = "none"; // Ocultando o conteúdo se o nome for incorreto
+    }
+
+    
+}
+ 
 const agora = new Date().toLocaleString("pt-BR");
 
 const lista = document.querySelector("#lista");
@@ -52,4 +70,8 @@ function renderizarLista() {
 function remover(index) {
   itens.splice(index, 1);
   renderizarLista();
+}
+
+function fechar() {
+  document.getElementById("modalcadastro").style.display = "none";
 }

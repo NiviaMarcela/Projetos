@@ -8,6 +8,7 @@ body {
   background: linear-gradient(135deg, #000000, #f4d6f8);
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
+  margin-top: 35px;
 }
 
 header {
