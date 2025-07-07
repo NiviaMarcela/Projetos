@@ -1,3 +1,7 @@
+/* Garante que o título das regiões não fique escondido atrás do header ao clicar no menu */
+h2[id^="região"] {
+  scroll-margin-top: 100px;
+}
 * {
   margin: 0;
   padding: 0;
