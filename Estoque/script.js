@@ -1,22 +1,32 @@
 document.getElementById("adicionar").addEventListener("click", () => {
   const input = document.getElementById("novoproduto");
-  const nome = input.value.trim();
+  const produto = input.value.trim();
 
-  if (nome) {
-    adicionarItem(nome);
+  const usuarioInput = document.getElementById("usuario");
+  const usuario = usuarioInput.value.trim();
+
+  const passwordInput = document.getElementById("senha");
+  const senha = passwordInput.value.trim();
+
+  
+  if (produto && usuario) {
+    adicionarItem(produto,usuario);
     input.value = "";
   }
 });
 
+
+const agora = new Date().toLocaleString("pt-BR");
+
 const lista = document.querySelector("#lista");
 let itens = [];
 
-function adicionarItem(nome) {
-  const existe = itens.find(item => item.nome === nome);
+function adicionarItem(produto, usuario) {
+  const existe = itens.find(item => item.produto === produto);
   if (existe) {
     existe.qtd += 1;
   } else {
-    itens.push({ nome: nome, qtd: 1 });
+    itens.push({ produto: produto, qtd: 1, data: agora, usuario: usuario});
   }
   renderizarLista();
 }
@@ -28,7 +38,7 @@ function renderizarLista() {
 
   itens.forEach((item, index) => {
     const li = document.createElement("li");
-    li.innerText = `${item.nome} ${item.qtd}x `;
+    li.innerText = ` ${item.data} ${item.produto} ${item.qtd}x  -  ${item.usuario} ` ;
 
     let botaoremover = document.createElement("button");
     botaoremover.textContent = " Remover";

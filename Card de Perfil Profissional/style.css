@@ -10,6 +10,19 @@ body {
   overflow: hidden;
 }
 
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 10;
+  margin-top: 10px;
+}
+
 .nivia { 
 color: #f8c4e8;
   text-align: center;
@@ -35,9 +48,33 @@ a {
     border-radius: 10px;
 }
 
+a:hover {
+background-color: #8b15af;
+color: #fff;
+      }
+
 
 .centralizado{
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+.botao-voltar {
+     
+display: inline-block;
+padding: 10px ;
+background-color: #c96ec1;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+font-size: 19px;
+transition: background 0.3s;
+margin-bottom: 10px;
+ }
+
+.botao-voltar:hover {
+background-color: #720494;
+color: #fff;
 }

@@ -1,3 +1,8 @@
+* {
+    background-color: #8dc3f7;
+}
+
+
 body{
     display: flex;
     align-items: center;
@@ -6,8 +11,12 @@ body{
     flex-direction: column;
     display: inline-block;
     font-weight: bold;
-    margin: 200px;
+    margin: 150px;
     text-align: center;
+    box-shadow: 2px 2px 5px 5px #539ee4;
+    width: 70% ;
+    margin-left: 200px;
+    
 }
 
 h1{
@@ -18,7 +27,7 @@ h1{
 
 #valor1{
     color: rgb(255, 255, 255);
-     background-color: rgb(96, 209, 209);
+     background-color: rgb(25, 84, 211);
       border-radius: 10px;
       width: 50px;
       font-weight: bold;
@@ -27,7 +36,7 @@ h1{
 
 #valor2{
     color: rgb(255, 255, 255);
-    background-color: rgb(96, 209, 209);
+    background-color: rgb(25, 84, 211);
     border-radius: 10px;
     width: 50px;
     font-weight: bold;
@@ -67,4 +76,26 @@ input[type="number"] {
 
 button{
      border-radius: 10px;
+}
+
+.botao-voltar {
+     
+display: inline-block;
+padding: 10px ;
+background-color: #4ca3f5;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+font-size: 19px;
+transition: background 0.3s;
+margin-bottom: 10px;
+align-items: center;
+justify-content: center;
+/* margin-left: 10px; */
+ }
+
+.botao-voltar:hover {
+background-color: #165da0;
+color: #fff;
 }

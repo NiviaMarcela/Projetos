@@ -132,3 +132,25 @@ footer {
   align-items: center;
   font-weight: bolder;
 }
+
+.botao-voltar {
+     
+display: inline-block;
+padding: 10px ;
+background-color: #f5c84c;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+font-size: 19px;
+transition: background 0.3s;
+margin-bottom: 10px;
+align-items: center;
+justify-content: center;
+/* margin-left: 10px; */
+ }
+
+.botao-voltar:hover {
+background-color: #cc9602;
+color: #fff;
+}
