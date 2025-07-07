@@ -55,15 +55,21 @@ nav ul {
 li {
   
   cursor: pointer;
-  color: rgb(19, 18, 18);
+  /* color: rgb(19, 18, 18); */
   font-weight: bold;
   list-style: none;
+  box-shadow: 2px 2px rgb(248, 248, 246);
   
+}
+
+li:hover{
+background-color: #eeece8;
+color: aliceblue;
 }
 
 a{
   text-decoration: none;
-  color: black;
+  color: rgb(19, 19, 19);
 }
 
 .card {
