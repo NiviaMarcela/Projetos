@@ -59,9 +59,9 @@ color: #fff;
   background-size: cover;
 }
 
-.compras {
+/* .compras {
   
-  padding: 100px;
+  padding: 150px;
   border-radius: 10px;
   color: white;
   width: 400%;
@@ -69,8 +69,8 @@ color: #fff;
   max-width: 1000px;
   text-align: center;
   flex-direction: row;
-  
-}
+ 
+} */
 
 #lista {
   display: block !important;

@@ -6,8 +6,8 @@ document.getElementById("adicionar").addEventListener("click", () => {
   const usuarioInput = document.getElementById("usuario");
   const usuario = usuarioInput.value.trim();
 
-  const passwordInput = document.getElementById("senha");
-  const senha = passwordInput.value.trim();
+  // const passwordInput = document.getElementById("senha");
+  // const senha = passwordInput.value.trim();
 
 
 
