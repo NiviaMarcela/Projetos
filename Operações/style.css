@@ -1,5 +1,5 @@
 * {
-    background-color: #8dc3f7;
+    background-color: #c9e2fa;
 }
 
 
@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     display: inline-block;
     font-weight: bold;
-    margin: 150px;
+    margin: 160px;
     text-align: center;
     box-shadow: 2px 2px 5px 5px #aad0f3;
     width: 70% ;
@@ -62,13 +62,13 @@ input[type="number"] {
 
 #resultado {
     display: inline-block;
-    border: 2px solid rgb(96, 209, 209);/* Adiciona uma borda preta */
+    border: 2px solid rgb(243, 247, 247);/* Adiciona uma borda preta */
     padding: 0px; /* Espaçamento interno */
     min-width: 200px; /* Define uma largura mínima */
     text-align: center; /* Centraliza o texto */
     font-size: 18px;
     font-weight: bold;
-    margin-top: 10%;
+    margin-top: 50px;
     border-radius: 10px;
     color: black;
 
@@ -89,7 +89,8 @@ border-radius: 5px;
 font-weight: bold;
 font-size: 19px;
 transition: background 0.3s;
-margin-bottom: 10px;
+margin-bottom: 50px;
+margin: 20px;
 align-items: center;
 justify-content: center;
 /* margin-left: 10px; */
