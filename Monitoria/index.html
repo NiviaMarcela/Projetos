@@ -1,78 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  Minha Primeira Lógica </title>
-</head>
-<style>
-    body{
-        background-color: #fde2f9;
+  <meta charset="UTF-8">
+  <title>Restaurantes em Codó</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
     }
-
     h1 {
-      text-align: left;
-      color: #be2bd1;
+      color: #2c3e50;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #ecf0f1;
+      margin: 10px 0;
       padding: 10px;
-      margin: 1%;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
-    
-    footer {
-     text-align: center; 
-      background-color: #fac1f1;
-     
-    }
-    p{
-      color: #be2bd1;
-      font-weight: bold;
-      text-align: center;
-    }
-
-</style>
-
-<h1> Logica de Programacao </h1>
-  
-<h2> 
-    <ul>
-        <li>Primeira aula</li>
-    </ul>
-</h2>
-
+  </style>
+</head>
 <body>
-    <h1>
-        Teste de Lógica
-      </h1>
-      <p id="resultado"></p>
-      
-      <script>
-        
-          let nota = 7 ; 
-        
-          if (nota < 4.5) {
-          
-          document.getElementById('resultado').innerHTML= "Resultado: Reprovado";
-      
-        }
+  <h1>🍽️ Restaurantes em Codó</h1>
+  <ul id="lista-restaurantes"></ul>
 
-        else if (nota >= 4.5 && nota < 6) {
-            document.getElementById('resultado').innerHTML= "Resultado: Em Recuperação"; 
-        }
-        
-        else {
-           document.getElementById('resultado').innerHTML= "Resultado: Aprovado";
-        }
-        
-        
-      </script>
+  <script>
+    async function salvarRestaurante() {
+      try {
+        const resposta = await fetch('/restaurante');
+        const restaurantes = await resposta.json();
 
-  
-   
+        const lista = document.getElementById('lista-restaurantes');
+        lista.innerHTML = ''; // limpa antes de adicionar
+
+        restaurantes.forEach(r => {
+          const item = document.createElement('li');
+          item.textContent = `${r.nome} — ${r.tipo} (${r.cidade})`;
+          lista.appendChild(item);
+        });
+      } catch (erro) {
+        console.error('Erro ao carregar restaurantes:', erro);
+        document.getElementById('lista-restaurantes').innerHTML = '<li>Erro ao carregar dados.</li>';
+      }
+    }
+
+    salvarRestaurante();
+  </script>
 </body>
-
-<footer>
-  
- 2025&copy Feito por Nivia Marcela
-  
-</footer>
-
 </html>
