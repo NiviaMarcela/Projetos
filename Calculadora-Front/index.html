@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Operações</title>
+    <style>
+        body {
+            background: #f0f4f8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: #fff;
+            padding: 32px 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px #0001;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, select, button {
+            margin: 8px 0;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid #b0c4de;
+        }
+        button {
+            background: #4f8cff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #2563eb;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+        <input type="number" id="n1" placeholder="Primeiro número">
+        <input type="number" id="n2" placeholder="Segundo número">
+        <select id="operacao">
+            <option value="somar">Somar</option>
+            <option value="subtrair">Subtrair</option>
+            <option value="multiplicar">Multiplicar</option>
+            <option value="dividir">Dividir</option>
+        </select>
+        <button onclick="calcular()">Calcular</button>
+        <div id="resultado"></div>
+    </div>
+    <script>
+        async function calcular() {
+            const n1 = Number(document.getElementById('n1').value);
+            const n2 = Number(document.getElementById('n2').value);
+            const operacao = document.getElementById('operacao').value;
+            const resultadoDiv = document.getElementById('resultado');
+
+            if (isNaN(n1) || isNaN(n2)) {
+                resultadoDiv.textContent = 'Por favor, insira dois números válidos.';
+                return;
+            }
+
+            try {
+                const resposta = await fetch(`http://localhost:3000/calcular/${operacao}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ n1, n2 })
+                });
+                const texto = await resposta.text();
+                resultadoDiv.textContent = texto;
+            } catch (erro) {
+                resultadoDiv.textContent = 'Erro ao conectar ao servidor.';
+            }
+        }
+    </script>
+</body>
+</html>

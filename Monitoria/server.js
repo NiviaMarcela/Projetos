@@ -1,34 +1,39 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const port = 3000;
-const cors = require;
+const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
-app.listen(port,() => {
-  console.log('Servidor http://localhost:${port}');
-});
-
-let restaurantes = [];
-
-app.post('/restaurante', (req, res) => {
-    const novoRestaurante = req.body;
-    restaurantes.push(novoRestaurante);
-    res.status(201).json({ mensagem: 'Restaurante salvo com sucesso!', dados: novoRestaurante });
-});
-
-app.listen(3000, () => {
-    console.log('Servidor rodando em http://localhost:3000');
-});
-
-app.get('/restaurante', (req, res) => {
+app.get("/", (req, res) => {
   res.json({
-      nome: "Sabor do Maranhão",
-      tipo: "Regional",
-      cidade: "Codó"});
+    name: "John Doe",
+    age: 25,
+  });
 });
 
-const port = 3000
-app.listen(port.toExponential() => {
-  console.log("servidor ${port}")
+app.get("/menu", (req, res) => {
+  res.json({
+    pratos: [
+      {
+        nome: "Feijoada Completa",
+        descricao: "Feijoada tradicional com arroz, couve e farofa",
+        preco: 45.9,
+      },
+      {
+        nome: "Moqueca de Peixe",
+        descricao: "Peixe fresco com leite de coco, dendê e pimentões",
+        preco: 55.9,
+      },
+      {
+        nome: "Picanha na Brasa",
+        descricao: "Picanha grelhada com arroz, feijão e vinagrete",
+        preco: 64.9,
+      },
+    ],
+  });
+});
+
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
